@@ -1,0 +1,165 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>2048</title>
+	<style>
+	* {
+		margin: 0;
+		padding: 0;
+		outline: none;
+	}
+	.body{
+		width: 100%;
+	}
+	.topic{
+		width: 100%;
+		height: 50px;
+		text-align: center;
+		background-color: #fff;
+		position: fixed;
+		z-index: 9999;
+		line-height: 50px;
+		font-size: 16px;
+	}
+	.img{
+		width: 100%;
+		height: 100%;
+		position: fixed;
+		top: 50px;
+		left: 0;
+		background-color: #EDEDED;
+	}
+	h3{
+		text-align: center;
+		padding: 10px 0;
+	}
+	.all{
+		margin: 20px 30px;
+		position: absolute;
+		top:50px;
+		border-radius: 10px;
+		opacity: 0.8;
+		background-color:#fff;
+	}
+	.padding{
+		padding: 0 10px;
+	}
+	.title{
+		font-weight: 600;
+		font-size: 16px;
+		padding: 10px 0;
+	}
+	span{
+		font-size: 14px;
+	}
+	.content{
+		font-size: 14px;
+		line-height: 22px;
+	}
+
+	@media (max-width: 350px){
+		.all{
+			margin: 20px 25px;
+		}
+		.topic{
+			font-size: 14px;
+		}
+		.padding{
+			padding: 0 5px;
+		}
+		.title{
+			font-size: 14px;
+			padding: 5px 0;
+		}
+		span{
+			font-size: 12px;
+		}
+		.content{
+			font-size: 12px;
+			line-height: 20px;
+		}
+	}
+
+	@media (min-width: 720px){
+		.title{
+			font-size: 18px;
+			padding: 15px 0;
+		}
+		.topic{
+			font-size: 18px;
+		}
+		.padding{
+			padding: 0 15px;
+		}
+		span{
+			font-size: 16px;
+		}
+		.content{
+			font-size: 16px;
+			line-height: 24px;
+		}
+	}
+	
+	</style>
+</head>
+<body>
+	<div class="body">
+		<div class="topic">决战2048隐私政策</div>
+		<div class="img"></div>
+		<div class="all">
+			<div class="padding">			
+				<h3>决战2048隐私政策</h3>
+				<span>决战2048：以下简称本应用。本应用尊重并保护所有使用服务用户的个人隐私权。为了给您提供更准确、更有个性化的服务，本应用会按照隐私权政策的规定使用您的个人信息。但本应用将以谨慎的态度对待这些信息。除本隐私权政策另有规定外，在未征得您事先许可的情况下，这些信息不会对外披露或向第三方提供。本应用会不时更新隐私政策。 在您同意服务使用协议之时，即视为您已经同意本隐私权政策全部内容。本隐私权政策属于本应用服务使用协议不可分割的一部分。</span>
+				<p class="title">1. 适用范围</p>
+				<p class="content">
+					a) 在您注册本应用帐号时，您根据要求提供的个人注册信息；</br>
+					b) 在您使用本应用网络服务，或访问本应用 平台网页时，本应用 自动接收并记录的您的浏览器和计算机上的信息，包括但不限于您的IP地址、浏览器的类型、使用的语言、访问日期和时间等数据；</br>
+					c) 本应用通过合法途径从商业伙伴处取得的个人数据。
+				</p>
+				<p class="content">您了解并同意，以下信息不适用本隐私权政策：</p>
+				<p class="content">
+					a) 您在使用本应用 提供的搜索服务中输入的关键字信息；</br>
+					b) 本应用收集到的您在本应用 发布的有关信息数据，包括但不限于参与活动及评价详情；</br>
+					c) 违反法律规定或违反本应用 规则行为及本应用 已对您采取的措施。
+				</p>
+
+				<p class="title">2. 信息使用</p>
+				<p class="content">
+					a)本应用不会向任何无关第三方提供、出售、出租、分享或交易您的个人信息，除非事先得到您的许可，或该第三方和本应用 （含本应用 关联公司）单独或共同为您提供服务，且在该服务结束后，其将被禁止访问包括其以前能够访问的所有这些资料；</br>
+					b)本应用亦不允许任何第三方以任何手段收集、编辑、出售或者无偿传播您的个人信息。任何本应用 平台用户如从事上述活动，一经发现，本应用 有权立即终止与该用户的服务协议；</br>
+					c) 为服务用户的目的，本应用 可能通过使用您的个人信息，向您提供您感兴趣的信息，包括但不限于向您发出产品和服务信息，或者与本应用 合作伙伴共享信息以便他们向您发送有关其产品和服务的信息（后者需要您的事先同意）。
+				</p>
+
+				<p class="title">3. 信息披露</p>
+				<p class="content">在如下情况下，本应用 将依据您的个人意愿或法律的规定全部或部分的披露您的个人信息：</p>
+				<p class="content">
+					a) 经您事先同意，向第三方披露；</br>
+					b) 为提供您所要求的产品和服务，而必须和 第三方分享您的个人信息；</br>
+					c) 根据法律的有关规定，或者行政或司法机构的要求，向第三方或者行政、司法机构披露；</br>
+					d) 如您出现违反中国有关法律、法规或者本应用服务协议或相关规则的情况，需要向第三方披露；</br>
+					e) 如您是适格的知识产权投诉人并已提起投诉，应被投诉人要求，向被投诉人披露，以便双方处理可能的权利纠纷；</br>
+					f) 在本应用 平台上创建的某一交易中，如交易任何一方履行或部分履行了交易义务并提出信息披露请求的，本应用 有权决定向该用户提供其交易对方的联络方式等必要信息，以促成交易的完成或纠纷的解决。</br>
+					g) 其它本应用 根据法律、法规或者网站政策认为合适的披露。					
+				</p>
+
+				<p class="title">4. 信息存储和交换</p>
+				<p class="content">
+					本应用 收集的有关您的信息和资料将保存在本应用 及（或）其关联公司的服务器上，这些信息和资料可能传送至您所在国家、地区或本应用 收集信息和资料所在地的境外并在境外被访问、存储和展示。
+				</p>
+
+				<p class="title">5. Cookie的使用</p>
+				<p class="content">
+					a) 在您未拒绝接受cookies的情况下，本应用 会在您的计算机上设定或取用cookies，以便您能登录或使用依赖于cookies的本应用 平台服务或功能。本应用 使用cookies可为您提供更加周到的个性化服务，包括推广服务；</br>
+					b) 您有权选择接受或拒绝接受cookies。您可以通过修改浏览器设置的方式拒绝接受cookies。但如果您选择拒绝接受cookies，则您可能无法登录或使用依赖于cookies的本应用 网络服务或功能；</br>
+					c) 通过本应用 所设cookies所取得的有关信息，将适用本政策。					
+				</p>
+			</div>
+		</div>
+	</div>
+	
+</body>
+</html>
